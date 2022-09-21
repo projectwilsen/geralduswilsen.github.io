@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/6edfa3b2fe.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href ="style sheet.css">
+    </head>
+    <div id = "container">
+       <h1 id = "greeting">Hi, I am  <span class="multiText"></span></h1>
+            <main>
+                <section class = "half">
+                    <img src ="indonesia.png" id ="indo">
+                    <img src ="sen2.png" id ="sen">
+                    <a href ="https://drive.google.com/file/d/1nNBEktBiFUFG-CYepsBA3pN9ML2795wJ/view?usp=sharing"><button data-tooltip = "Download CV"><img class = "cv" src ="cv.png"/></button></a>
+                    <a href =#portfolio><button data-tooltip = "Project"><img class ="coding" src ="coding.png"></button></a>
+                    <a href =#portfolio><button data-tooltip = "Experience"><img class ="stat" src ="stat.png"></button></a>
+                    <a href =#achievement><button data-tooltip = "Achievement"><img class ="piala" src ="piala.png"></button></a>
+                </section>
+                <div class = "links">
+                    <a href ="https://www.linkedin.com/in/geraldus-wilsen-111754170/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href ="https://github.com/projectwilsen"><i class="fa-brands fa-square-github"></i></a>
+                    <a href ="mailto: wilsenp@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+                    <a href ="https://wa.me/628155208181"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div> 
+                <section class ="half">
+                    <div class="blog-card" id ="portfolio">
+                        <input type="radio" name="select" id="tap-1" checked>
+                        <input type="radio" name="select" id="tap-2">
+                        <input type="radio" name="select" id="tap-3">
+                        <input type="checkbox" id="imgTap">
+                        <div class="sliders">
+                          <label for="tap-1" class="tap tap-1"></label>
+                          <label for="tap-2" class="tap tap-2"></label>
+                          <label for="tap-3" class="tap tap-3"></label>
+                        </div>
+                        <div class="inner-part">
+                          <label for="imgTap" class="img">
+                            <img class="img-1" src="graduation.jpg">
+                          </label>
+                          <div class="content content-1">
+                            <div class="title">Student Graduation Classifier</div>
+                            <div class="text">A classifier based on 3 models which are Random Forest, Decision Tree, and SVM model to predict either the student will graduate more than 4 years or not, with accuracy above 90%.</div>
+                            <a href="https://github.com/projectwilsen/Student-Graduation-Classifier"><button>Read more</button></a>
+                          </div>
+                        </div>
+                        <div class="inner-part">
+                          <label for="imgTap" class="img">
+                            <img class="img-2" src="shopeesales.jpg">
+                          </label>
+                          <div class="content content-2">
+                            <div class="title">Shopee Sales Prediction</div>
+                            <div class="text">A time series project using SARIMAX method to predict the following sales of Abang Stiker (Small & Medium Enteprise in Surabaya, Indonesia) for the next period</div>
+                            <a href ="https://github.com/projectwilsen/Shopee-Sales-Prediction"><button>Read more</button></a>
+                          </div>
+                        </div>
+                        <div class="inner-part">
+                          <label for="imgTap" class="img">
+                            <img class="img-3" src="Poverty.jpg">
+                          </label>
+                          <div class="content content-3">
+                            <div class="title">West Java Poverty Visualization</div>
+                            <div class="text"> This project I have builded for National Data Science Turnament held by Cybertrend Data Academy x Shopee. Visualizing the data using Tableau, and giving a solution based on further analysis.</div>
+                            <a href ="https://github.com/projectwilsen/West-Java-Poverty-Visualization"><button>Read more</button></a>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+                <section class ="half">
+                    <h4 id = "achievement">Geraldus Wilsen</h4>
+                </section>
+            </main>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings:["Geraldus Wilsen","a Data Enthusiast"],
+            typeSpeed:90,
+            backSpeed:80,
+            backDelay: 1500,
+        })
+    </script>
+</html>
